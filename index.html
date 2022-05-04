@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="icon" type="image/x-icon" href="Logo.png">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body scrollable="true">
+    <br>
+    <div class="flex center">
+        <img src="Logo.png" alt="" class="logo">
+        &nbsp;&nbsp;
+        <div class="text-white">Weather WebApp</div>
+
+    </div>
+    <hr class="cute-hr">
+    <br><br>
+
+    <div class="flex center"><div class="inputm">
+        <input type="text" value="" placeholder=" Enter the name of Place"
+            id="city" >&nbsp;&nbsp; <img  onclick="mic()" class="mic" src="mic.png" alt="Mic">
+            &nbsp;&nbsp;
+    </div>&nbsp;&nbsp;<button id="sumb" class="sumbit" onclick="what()">Sumbit</button></div>
+            <br><br>
+            <center><div class="text-reds" id="wrong"></div></center>
+            
+          <center>  <div class="text-white" id="name"></div></center>
+       
+    <center>
+        <br><br>
+        <div  id="ibox" class="box">
+            <br>
+            <div class="text-balck" id="temp">Temperature:</div>
+            <br>
+            <div class="text-balck" id="wspe">Wind speed:</div>
+            <br>
+          
+            <div class="text-balck" id="humidity">Humidity:</div>
+            <br>
+            <div class="text-balck" id="weather">Weather:</div>
+            
+            <img src="#" alt="" class="we" id="icon">
+            <br>
+          <a href="#" id="map" target="_blank">See location on map</a>
+            <br><br>
+        </div>
+   
+        <div class="loader" id="nfLoader"></div>
+        
+    </center>
+    <audio id="wrongs" src="wrong.wav">
+        
+</body>
+
+</html>
